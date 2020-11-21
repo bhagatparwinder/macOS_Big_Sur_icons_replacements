@@ -12,7 +12,7 @@
         <br>
         <ul class="coral-List p-t-10 p-b-10">
           <li class="coral-List-item">Icon submited must be a .png file</li>
-          <li class="coral-List-item">Use <a href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template%20-%20Icon%20-%20App.sketch" class="coral-Link">this </a> template for dimensions and reference.</li>
+          <li class="coral-List-item">Use <a href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template-Icon-App.sketch" class="coral-Link">this </a> template for dimensions and reference.</li>
           <li class="coral-List-item"> <b> The file name must be the same as the name of the app. </b></li>
         </ul>
 
@@ -59,11 +59,6 @@
             </div>
           </div>
         </coral-fileupload>
-        
-        <!-- <form class="coral-Form coral-Form--vertical" >
-          <label id="appName-label" class="coral-FieldLabel">Name of app</label>
-          <input id="appName-contributor" is="coral-textfield" labelledby="email-label" class="coral-Form-field" @change="setAppName">
-        </form> -->
 
         <form class="coral-Form coral-Form--vertical" >
           <label id="email-label" class="coral-FieldLabel">Your email</label>
@@ -79,7 +74,7 @@
         <form class="coral-Form coral-Form--vertical" >
           <!-- <label id="credit-label" class="coral-FieldLabel">How should we credit you? <span style="opacity: 0.5"><i>(optional)</i></span></label> -->
           <label id="credit-label" class="coral-FieldLabel">How should we credit you?</label>
-          <input id="credit" is="coral-textfield" placeholder="GitHub or Twitter URL, portfolio site..." labelledby="email-label" class="coral-Form-field" @change="saveCredit">
+          <input id="credit" is="coral-textfield" type="url" placeholder="MAKE SURE IT'S A FULL URL: GitHub, Twitter, portfolio site... " labelledby="email-label" class="coral-Form-field" @change="saveCredit">
         </form>
 
       </div>
@@ -111,6 +106,7 @@ let firebaseConfig = {
   projectId: "macos-icons",
   storageBucket: "macos-icons.appspot.com"
 };
+
 
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

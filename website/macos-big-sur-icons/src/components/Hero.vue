@@ -2,7 +2,8 @@
 <div id="hero" class="hero-wrapper">
       
       <div class="PH-badge">
-        <iframe src="https://github.com/sponsors/elrumo/card" title="Sponsor elrumo" height="225" width="600" style="border: 0;"></iframe>
+        <iframe class="gitHub-sponsor" src="https://github.com/sponsors/elrumo/card" title="Sponsor elrumo" height="100%" width="auto" style="border: 0;"></iframe>
+
         <!-- <a href="https://www.producthunt.com/posts/1000-free-macos-big-sur-icons?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-1000-free-macos-big-sur-icons" target="_blank">
           <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=274722&theme=light&period=daily" alt="1000+ free macOS Big Sur Icons - Open source and community created icons for macOS Big Sur. | Product Hunt" style="width: 250px; height: 54px;" width="200" height="54"/>
         </a> -->
@@ -16,13 +17,13 @@
       </h3>
 
       <p class="coral-Body--L w-100 body-text p-t-20">
-        Click on each icon to download it, or download all {{ list.length }} icons from  <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/releases/download/v1.0/icons.zip"> here. </a>
+        Click on each icon to download it, or download all {{ iconListLen }} icons from  <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/releases/download/v1.0/icons.zip"> here. </a>
         <!-- <br><br> -->
         Click below to contribute, use this
-        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template%20-%20Icon%20-%20App.sketch">Sketch</a>,
-        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template_App_Icon.fig">Figma</a>,
-        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template%20-%20Icon%20-%20App.ai">Illustrator</a>, or
-        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template%20-%20Icon%20-%20App.psd">Photoshop</a> template to make the icons.
+        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template-Icon-App.sketch">Sketch</a>,
+        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template-Icon-App.fig">Figma</a>,
+        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template-Icon-App.ai">Illustrator</a>, or
+        <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template-Icon-App.psd">Photoshop</a> template to make the icons.
       </p>
 <!--       
       <a class="coral-Link" href="https://github.com/elrumo/macOS_Big_Sur_icons_replacements" target="_blank">
@@ -66,7 +67,8 @@ export default {
 
     props:{
       list: {},
-      submitIconDialog: String
+      submitIconDialog: String,
+      iconListLen: 0,
     },
 
     methods:{
